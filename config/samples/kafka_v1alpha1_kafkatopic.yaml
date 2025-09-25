@@ -6,4 +6,9 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
   name: kafkatopic-sample
 spec:
-  # TODO(user): Add fields here
+  name: my-topic
+  partitions: 3
+  replicationFactor: 1
+  config:
+    cleanup.policy: compact
+    retention.ms: "604800 000"

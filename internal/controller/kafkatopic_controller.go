@@ -49,7 +49,7 @@ type KafkaTopicReconciler struct {
 func (r *KafkaTopicReconciler) Reconcile(ctx context.Context, req ctrl.Request) (ctrl.Result, error) {
 	_ = logf.FromContext(ctx)
 
-	// TODO(user): your logic here
+	logf.Log.Info("Reconciling KafkaTopic")
 
 	return ctrl.Result{}, nil
 }
