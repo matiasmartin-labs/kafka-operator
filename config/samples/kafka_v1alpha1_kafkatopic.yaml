@@ -11,4 +11,4 @@ spec:
   replicationFactor: 1
   config:
     cleanup.policy: compact
-    retention.ms: "604800 000"
+    retention.ms: "604800000"
